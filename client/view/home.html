@@ -1,54 +1,6 @@
-<template name="headerHome">
-
-	<!-- header -->
-	<header id="header">
-		
-		<div class="header-center">
-			<div class="header-top"></div>
-			<!-- shell -->
-			<div class="shell">
-				<div class="header-inner">
-					<!-- header-cnt -->
-					<div class="header-cnt">
-						<h1 id="logo"><a href="#">Rodolfo Terra</a></h1>		
-						<p>
-							Trabalho com desenvolvimento de sistemas SIG/SAD em plataformas locais e online, tendo experiência em várias etapas do processo como análise de necessidade arquitetura de sistemas, modelagem de dados, testes, implantação e implementações de melhorias.
-						</p>
-
-						<a href="#" class="blue-btn">CONTATO</a>
-					</div>
-					<!-- end of header-cnt -->
-					<!-- slider -->
-					<div class="slider-holder">
-						<div class="flexslider">
-							<ul class="slides">
-								<li><img src="/images/slide-img.png" alt="" /></li>
-							
-								<li><img src="/images/slide-img.png" alt="" /></li>
-
-								<li><img src="/images/slide-img.png" alt="" /></li>
-
-								<li><img src="/images/slide-img.png" alt="" /></li>
-
-								<li><img src="/images/slide-img.png" alt="" /></li>
-							</ul>
-						</div>
-					</div>
-					<!-- end of slider -->
-					<div class="cl">&nbsp;</div>
-				</div>
-				<div class="cl">&nbsp;</div>
-			</div>
-			<!-- end of shell -->	
-			<div class="header-bottom"></div>
-		</div>
-	</header>
-	<!-- end of header -->
-
-</template>
-
-<template name="infoHome">
-
+<template name="pageHome">
+	{{> menuSite}}
+	{{> headerPage}}
 	<!-- main -->
 	<div class="main">
 		<span class="shadow-top"></span>
@@ -153,9 +105,9 @@
 		<!-- end of container -->
 		
 	</div>
-	<!-- end of main --><br><br>
+	<!-- end of main -->
 
-	<hr>
+<!-- 	<hr>
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 
@@ -165,6 +117,7 @@
     <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
     <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+  </ul> -->
 
+  {{> footerSite}}
 </template>

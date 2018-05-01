@@ -3,10 +3,10 @@
 </head>
 
 <body>
-	{{> menuSite}}
-
-	{{> headerHome}}
-	{{> infoHome}}
-	{{> footerSite}}
+	
+	<template name="mainPage">
+		{{> Template.dynamic template=main }}
+	</template>
+	
 </body>
 
