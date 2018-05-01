@@ -1,15 +1,22 @@
 <template name="pageHome">
 	{{> menuSite}}
-	{{> headerPage}}
-	
+
+	{{#animate type="fadeIn" delay="10"}}
+
+		{{> headerPage}}
+
+	{{/animate}}
+
+	{{#animate type="fadeIn" delay="10"}}
 	<!-- main -->
-	<div class="main">
+	<div class="main animated out">
 		<span class="shadow-top"></span>
 		<!-- shell -->
 		<div class="shell">
 			<div class="container">
 				<!-- testimonial -->
 				<section class="testimonial">
+					
 					<h2>Full Stack Developer - Software Egineer</h2>
 					<p><strong>“</strong>
 						Trabalho com desenvolvimento de sistemas SIG/SAD em plataformas locais e online, tendo experiência em várias etapas do processo como análise de necessidade arquitetura de sistemas, modelagem de dados, testes, implantação e implementações de melhorias.
@@ -106,6 +113,7 @@
 		<!-- end of container -->
 		
 	</div>
+	{{/animate}}
 	<!-- end of main -->
 
 <!-- 	<hr>
@@ -120,5 +128,7 @@
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul> -->
 
-  {{> footerSite}}
+	{{#animate type="fadeIn" delay="10"}}
+		{{> footerSite}}
+	{{/animate}}
 </template>

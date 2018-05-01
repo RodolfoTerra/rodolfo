@@ -1,6 +1,11 @@
 <template name="pageTrabalho">
 	{{> menuSite}}
-	{{> headerPage}}
+
+	{{#animate type="fadeIn" delay="10"}}
+		{{> headerPage}}
+	{{/animate}}
+
+	{{#animate type="fadeIn" delay="10"}}
 	<!-- main -->
 	<div class="main">
 		<span class="shadow-top"></span>
@@ -10,7 +15,11 @@
 
 			</div>
 		</div>
-	</div>	
+	</div>
 
-	{{> footerSite}}
+	{{/animate}}
+
+	{{#animate type="fadeIn" delay="10"}}
+		{{> footerSite}}
+	{{/animate}}
 </template>
