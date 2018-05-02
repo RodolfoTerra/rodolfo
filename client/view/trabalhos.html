@@ -1,13 +1,12 @@
 <template name="pageTrabalho">
 	{{> menuSite}}
 
-	{{#animate type="fadeIn" delay="10"}}
-		{{> headerPage}}
-	{{/animate}}
+	{{> headerPage}}
 
 	{{#animate type="fadeIn" delay="10"}}
+	
 	<!-- main -->
-	<div class="main">
+	<div class="main animated in">
 		<span class="shadow-top"></span>
 		<!-- shell -->
 		<div class="shell">
@@ -19,7 +18,6 @@
 
 	{{/animate}}
 
-	{{#animate type="fadeIn" delay="10"}}
-		{{> footerSite}}
-	{{/animate}}
+	{{> footerSite}}
+	
 </template>

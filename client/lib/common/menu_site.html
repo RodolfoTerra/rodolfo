@@ -5,14 +5,15 @@
 			<a href="#" class="nav-btn">HOMEPAGE<span></span></a>
 			<span class="top-nav-shadow"></span>
 			<ul>
-				<li class="active"><span><a href="/">Início</a></span></li>
-				<li><span><a href="trabalhos/1">Trabalhos</a></span></li>
-				<li><span><a href="#">Artigos</a></span></li>
-				<li><span><a href="#">Certificações</a></span></li>
+				<li class="{{activeInicio}}" id="inicio" name="inicio"><span><a href="/" class="link">Início</a></span></li>
+				<li class="{{activeTrabalhos}}" id="trabalhos"><span><a href="/trabalhos/1">Trabalhos</a></span></li>
+				<li class="{{activeArtigos}}" id="artigos"><span><a href="#">Artigos</a></span></li>
+				<li class="{{activeCertificacoes}}" id="certificacoes"><span><a href="#">Certificações</a></span></li>
 				<li><span><a href="#">Blog</a></span></li>
-				<li><span><a href="#">Contato</a></span></li>
+				<li class="{{activeContato}}" id="contato"><span><a href="#">Contato</a></span></li>
 				<!-- <li><span><a href="#">contacts</a></span></li> -->
 			</ul>
 		</div>
 	</nav>	
+
 </template>

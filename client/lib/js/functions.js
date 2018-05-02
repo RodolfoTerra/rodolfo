@@ -38,6 +38,10 @@ $(function() {
 });
 
 $(window).load(function() {
+	carousel();
+});
+
+function carousel(){
 	var winW = $(window).width();
 	if (winW>767) {
 		$('.top-nav').addClass('desktop');
@@ -52,5 +56,5 @@ $(window).load(function() {
 		directionNav: false,
 		controlNav: true,
 		animationDuration: 900
-	});
-});
+	});	
+}

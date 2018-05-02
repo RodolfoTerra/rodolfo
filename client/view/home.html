@@ -1,15 +1,11 @@
 <template name="pageHome">
 	{{> menuSite}}
 
-	{{#animate type="fadeIn" delay="10"}}
-
-		{{> headerPage}}
-
-	{{/animate}}
+	{{> headerPage}}
 
 	{{#animate type="fadeIn" delay="10"}}
 	<!-- main -->
-	<div class="main animated out">
+	<div class="main animated in">
 		<span class="shadow-top"></span>
 		<!-- shell -->
 		<div class="shell">
@@ -128,7 +124,5 @@
     <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
   </ul> -->
 
-	{{#animate type="fadeIn" delay="10"}}
-		{{> footerSite}}
-	{{/animate}}
+	{{> footerSite}}
 </template>

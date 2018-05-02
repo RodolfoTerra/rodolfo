@@ -1,6 +1,7 @@
 <template name="headerPage">
-		<!-- header -->
-	<header id="header" class="animated out">
+	{{#animate type="fadeIn" delay="10"}}
+	<!-- header -->
+	<header id="header" class="animated out in">
 		
 		<div class="header-center">
 			<div class="header-top"></div>
@@ -43,5 +44,6 @@
 		</div>
 	</header>
 	<!-- end of header -->
+	{{/animate}}
 
 </template>
