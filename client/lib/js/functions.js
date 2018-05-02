@@ -23,26 +23,16 @@ $(function() {
 		return false;
 	});
 
-	var winW = $(window).width();
-	
-	$(window).on('resize', function() {
-		var winW = $(window).width();
-
-		if (winW>767) {
-			$('.top-nav').addClass('desktop');
-		}else{
-			$('.top-nav').removeClass('desktop');
-		}
-	});
+	carouselHeader();
 
 });
 
 $(window).load(function() {
-	carousel();
+	carouselHeader();
 });
 
-function carousel(){
-	var winW = $(window).width();
+function carouselHeader(){
+	let winW = $(window).width();
 	if (winW>767) {
 		$('.top-nav').addClass('desktop');
 	}else{

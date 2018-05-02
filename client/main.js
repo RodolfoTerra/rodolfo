@@ -6,6 +6,31 @@ import './main.html';
 
 //if(Meteor.IsClient){
 
+
+	Template.headerPage.onRendered(function() {
+		$(function() {
+			
+		 	// your code goes here
+			let winW = $(window).width();
+			if (winW>767) {
+				$('.top-nav').addClass('desktop');
+			}else{
+				$('.top-nav').removeClass('desktop');
+			}
+			
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlsContainer: ".flexslider",
+				slideshowSpeed: 3000,
+				directionNav: false,
+				controlNav: true,
+				animationDuration: 900
+			});
+
+		});
+  	});
+
+
 	Template.menuSite.onCreated(function menuSiteOnCreated() {
 	  // counter starts at 0
 	  this.activeInicio = new ReactiveVar(0);
